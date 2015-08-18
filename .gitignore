@@ -1,0 +1,12 @@
+.sbtserver
+activator
+activator-launch-1.3.5.jar
+activator.bat
+logs
+target
+/.idea
+/.idea_modules
+/.classpath
+/.project
+/.settings
+/RUNNING_PID

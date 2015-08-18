@@ -1,0 +1,11 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# Home page
+GET     /                               controllers.Application.index
+PUT     /:lat/:long/:time/:dist         controllers.Graffiti.add(lat: Long, long: Long, time: Long, dist: Long)
+GET     /:lat/:long/:dist/:start/:end   controllers.Graffiti.get(lat: Long, long: Long, dist: Long, start: Long, end: Long)
+
+# Map static resources from the /public folder to the /assets URL path
+GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)
